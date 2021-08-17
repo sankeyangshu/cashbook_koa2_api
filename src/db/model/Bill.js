@@ -3,7 +3,7 @@
  * @Author: 王振
  * @Date: 2021-08-17 09:38:32
  * @LastEditors: 王振
- * @LastEditTime: 2021-08-17 10:34:48
+ * @LastEditTime: 2021-08-17 13:41:47
  */
 
 const seq = require('../seq');
@@ -14,7 +14,6 @@ const Bill = seq.define('bill', {
   payType: {
     type: DECIMAL,
     allowNull: false,
-    defaultValue: 3,
     comment: '账单类型（ 1 为支出，2 为收入）',
   },
   amount: {

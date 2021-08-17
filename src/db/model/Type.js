@@ -3,7 +3,7 @@
  * @Author: 王振
  * @Date: 2021-08-17 09:45:26
  * @LastEditors: 王振
- * @LastEditTime: 2021-08-17 10:34:50
+ * @LastEditTime: 2021-08-17 13:41:43
  */
 
 const seq = require('../seq');
@@ -19,8 +19,7 @@ const Type = seq.define('type', {
   type: {
     type: DECIMAL,
     allowNull: false,
-    defaultValue: 1,
-    comment: '标签类型',
+    comment: '标签类型,1 为收入，2 为支出',
   },
   userId: {
     type: INTEGER,
